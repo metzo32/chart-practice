@@ -1,5 +1,4 @@
 import styled from '@emotion/styled'
-import { theme } from '@/styles/theme'
 
 export const Wrapper = styled.div`
   display: flex;
@@ -12,4 +11,12 @@ export const FlexContainer = styled.div`
   display: flex;
   flex-direction: row;
   gap: 24px;
+`
+
+export const CardContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  background-color: lightgray;
+  padding: 5px 10px;
 `

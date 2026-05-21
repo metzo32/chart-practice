@@ -113,3 +113,24 @@ export const skHynixData: StockDataPoint[] = [
   { date: '2024-03-29', price: 225000, volume: 2710000 },
   { date: '2024-04-01', price: 231000, volume: 3100000 },
 ]
+
+export type MonthlyProfitDataPoint = {
+  month: string
+  profit: number
+  loss: number
+}
+
+export const monthlyProfitData: MonthlyProfitDataPoint[] = [
+  { month: '2024-01', profit: 320000,  loss: -150000 },
+  { month: '2024-02', profit: 480000,  loss: -90000  },
+  { month: '2024-03', profit: 210000,  loss: -340000 },
+  { month: '2024-04', profit: 560000,  loss: -120000 },
+  { month: '2024-05', profit: 130000,  loss: -410000 },
+  { month: '2024-06', profit: 390000,  loss: -80000  },
+  { month: '2024-07', profit: 650000,  loss: -200000 },
+  { month: '2024-08', profit: 280000,  loss: -370000 },
+  { month: '2024-09', profit: 510000,  loss: -60000  },
+  { month: '2024-10', profit: 170000,  loss: -290000 },
+  { month: '2024-11', profit: 430000,  loss: -110000 },
+  { month: '2024-12', profit: 720000,  loss: -180000 },
+]

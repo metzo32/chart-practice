@@ -1,17 +1,16 @@
-import styled from '@emotion/styled'
-import { theme } from '../styles/theme'
+import { monthlyProfitData } from '@/data/mockData'
+import { Wrapper } from '@/components/common/Containters'
+import { H2 } from '@/components/common/Headers'
+import CardWithSum from '@/components/BarChart/CardWithSum'
+import BarChartGraph from '@/components/BarChart/BarChartGraph'
 
 export default function BarChartPage() {
   return (
     <Wrapper>
-      <h2>Bar Chart</h2>
-      <Placeholder>과제를 진행하면 여기에 구현됩니다.</Placeholder>
+      <H2>Bar Chart</H2>
+      <CardWithSum data={monthlyProfitData} />
+      <BarChartGraph data={monthlyProfitData} />
     </Wrapper>
   )
 }
 
-const Wrapper = styled.div``
-
-const Placeholder = styled.p`
-  color: ${theme.colors.text.secondary};
-`
