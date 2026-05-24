@@ -1,7 +1,7 @@
 export type StockDataPoint = {
-  date: string
-  price: number
-  volume: number
+  date: string;
+  price: number;
+  volume: number;
 }
 
 export const samsungData: StockDataPoint[] = [
@@ -112,6 +112,27 @@ export const skHynixData: StockDataPoint[] = [
   { date: '2024-03-28', price: 227000, volume: 2980000 },
   { date: '2024-03-29', price: 225000, volume: 2710000 },
   { date: '2024-04-01', price: 231000, volume: 3100000 },
+]
+
+export type CumulativeReturnDataPoint = {
+  month: string
+  portfolio: number
+  kospi: number
+}
+
+export const cumulativeReturnData: CumulativeReturnDataPoint[] = [
+  { month: '1월',  portfolio:  3.2,  kospi:  1.5 },
+  { month: '2월',  portfolio:  5.8,  kospi:  3.1 },
+  { month: '3월',  portfolio:  4.1,  kospi:  4.7 },
+  { month: '4월',  portfolio:  8.3,  kospi:  5.2 },
+  { month: '5월',  portfolio:  6.7,  kospi:  3.8 },
+  { month: '6월',  portfolio: 11.2,  kospi:  6.4 },
+  { month: '7월',  portfolio: 14.5,  kospi:  8.1 },
+  { month: '8월',  portfolio: 12.8,  kospi:  7.3 },
+  { month: '9월',  portfolio: 16.3,  kospi:  9.6 },
+  { month: '10월', portfolio: 19.7,  kospi: 11.2 },
+  { month: '11월', portfolio: 17.4,  kospi: 10.5 },
+  { month: '12월', portfolio: 22.1,  kospi: 13.8 },
 ]
 
 export type MonthlyProfitDataPoint = {

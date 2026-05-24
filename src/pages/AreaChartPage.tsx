@@ -1,17 +1,30 @@
-import styled from '@emotion/styled'
-import { theme } from '../styles/theme'
+import { useState } from "react";
+import { Wrapper } from "@/components/common/Containters";
+import { cumulativeReturnData } from "@/data/mockData";
+import { FilterButtons } from "@/components/common/FilterButtons";
+import { AreaChartGraph } from "@/components/AreaChart/AreaChartGraph";
 
 export default function AreaChartPage() {
+  const [selectedItem, setSelectedItem] = useState<string>("1Y");
+  const buttonItems = [
+    { label: "6M", value: "6M" },
+    { label: "1Y", value: "1Y" },
+  ];
+
+  const filteredData =
+    selectedItem === "6M"
+      ? cumulativeReturnData.slice(-6)
+      : cumulativeReturnData;
+
   return (
     <Wrapper>
-      <h2>Area Chart</h2>
-      <Placeholder>과제를 진행하면 여기에 구현됩니다.</Placeholder>
+      <FilterButtons
+        items={buttonItems}
+        selectedValue={selectedItem}
+        onChange={setSelectedItem}
+      />
+
+      <AreaChartGraph data={filteredData} />
     </Wrapper>
-  )
+  );
 }
-
-const Wrapper = styled.div``
-
-const Placeholder = styled.p`
-  color: ${theme.colors.text.secondary};
-`
