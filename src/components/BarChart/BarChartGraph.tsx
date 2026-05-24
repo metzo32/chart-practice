@@ -24,7 +24,7 @@ export default function BarChartGraph({ data }: BarChartGraphProps) {
                     fill={theme.colors.primary}
                 />
                 <Tooltip
-                    formatter={(value: number, name: string) => [value.toLocaleString() + '원', name === "이익" ? "수익" : "손실"]}
+                    formatter={(value: number, name: string) => [value.toLocaleString() + '원', name]}
                 />
             </BarChart>
         </ResponsiveContainer>

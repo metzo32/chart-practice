@@ -36,7 +36,7 @@ export default function Layout() {
 const Wrapper = styled.div`
   display: flex;
   min-height: 100vh;
-  background: ${theme.colors.background};
+  background: ${theme.colors.surface};
 `
 
 const Nav = styled.nav`
@@ -76,7 +76,7 @@ const StyledNavLink = styled(NavLink)`
   transition: background 0.15s, color 0.15s;
 
   &:hover {
-    background: ${theme.colors.background};
+    background: ${theme.colors.surface};
     color: ${theme.colors.text.primary};
   }
 

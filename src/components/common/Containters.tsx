@@ -13,10 +13,3 @@ export const FlexContainer = styled.div`
   gap: 24px;
 `
 
-export const CardContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  background-color: lightgray;
-  padding: 5px 10px;
-`

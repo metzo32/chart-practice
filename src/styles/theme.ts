@@ -4,7 +4,7 @@ export const theme = {
     secondary: '#7c3aed',
     success: '#16a34a',
     danger: '#dc2626',
-    background: '#f8fafc',
+    background: '#BEBEBE',
     surface: '#ffffff',
     border: '#e2e8f0',
     samsung: "#123AC9",
