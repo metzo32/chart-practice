@@ -1,17 +1,15 @@
-import styled from '@emotion/styled'
-import { theme } from '../styles/theme'
+import { useState } from "react";
+import { PieInputs } from "@/components/PieChart/PieInputs";
+import { PieChartGraph } from "@/components/PieChart/PieChartGraph";
+import { portfolioData, type PortfolioDataPoint } from "@/data/mockData";
 
 export default function PieChartPage() {
+const [data, setData] = useState<PortfolioDataPoint[]>(portfolioData);
+
   return (
-    <Wrapper>
-      <h2>Pie Chart</h2>
-      <Placeholder>과제를 진행하면 여기에 구현됩니다.</Placeholder>
-    </Wrapper>
-  )
+    <>
+      <PieInputs data={data} onChange={setData} />
+      <PieChartGraph data={data} />
+    </>
+  );
 }
-
-const Wrapper = styled.div``
-
-const Placeholder = styled.p`
-  color: ${theme.colors.text.secondary};
-`

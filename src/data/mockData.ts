@@ -1,3 +1,5 @@
+import { theme } from "@/styles/theme";
+
 export type StockDataPoint = {
   date: string;
   price: number;
@@ -133,6 +135,20 @@ export const cumulativeReturnData: CumulativeReturnDataPoint[] = [
   { month: '10월', portfolio: 19.7,  kospi: 11.2 },
   { month: '11월', portfolio: 17.4,  kospi: 10.5 },
   { month: '12월', portfolio: 22.1,  kospi: 13.8 },
+]
+
+export type PortfolioDataPoint = {
+  name: string
+  weight: number
+  fill: string
+}
+
+export const portfolioData: PortfolioDataPoint[] = [
+  { name: '삼성전자',      weight: 30, fill: theme.chart.colors.samsung },
+  { name: 'SK하이닉스',   weight: 20, fill: theme.chart.colors.hynix },
+  { name: 'NAVER',        weight: 15, fill: theme.chart.colors.naver },
+  { name: 'LG에너지솔루션', weight: 20, fill: theme.chart.colors.lg },
+  { name: '카카오',       weight: 15, fill: theme.chart.colors.kakao },
 ]
 
 export type MonthlyProfitDataPoint = {

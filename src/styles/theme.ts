@@ -15,7 +15,13 @@ export const theme = {
     },
   },
   chart: {
-    colors: ['#2563eb', '#7c3aed', '#16a34a', '#dc2626', '#ea580c'],
+    colors: {
+      samsung: "#123AC9",
+      hynix: "#B50724",
+      naver: "#2DB400",
+      kakao: "#FEE500",
+      lg: "#A30000",
+    },
   },
   spacing: {
     xs: '4px',

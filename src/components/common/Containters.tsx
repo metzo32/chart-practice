@@ -13,3 +13,9 @@ export const FlexContainer = styled.div`
   gap: 24px;
 `
 
+export const InputContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+`
